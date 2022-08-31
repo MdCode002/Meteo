@@ -69,6 +69,7 @@ valider.addEventListener("click", () => {
           "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
         desc.innerHTML = data.weather[0].description;
         document.querySelector("#temp").innerHTML = data.main.temp + " °C";
+    inville = "";
       })
     )
     .catch((err) => {
@@ -76,6 +77,7 @@ valider.addEventListener("click", () => {
       cloud.src = "";
       desc.innerHTML = "";
       document.querySelector("#temp").innerHTML = "";
+    inville = "";
     });
   inville = "";
 });
